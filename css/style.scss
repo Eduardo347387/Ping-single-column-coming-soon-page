@@ -160,13 +160,16 @@ body{
                 }
                 .container-input #email, #enviar{
                     height: 4.3rem;
+                    cursor: pointer;
                 }
                 .container-input #email{
                     width: 38rem;
                 }
                 #enviar{
-                  
                     width: 15rem;
+                    &:hover{
+                        opacity: 0.8;
+                    }
                 }
             }
             .illustration-dashboard{

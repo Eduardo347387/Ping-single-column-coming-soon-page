@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded',function(){
     function validarInput(element){
         
         if(element.value.trim()=== ''){
-            alertaError(element.parentElement,'Campo vacio')
+            alertaError(element.parentElement,'¡Ups! Parece que olvidaste agregar tu correo electrónico')
             addStyle(element,{borderColor:'red'})
             return
         }
         else if(!validarEmail(element.value)){
-            alertaError(element.parentElement,'Email Invalido')
+            alertaError(element.parentElement,'Proporcione una dirección de correo electrónico válida')
             addStyle(element,{borderColor:'red'})
             return
         }

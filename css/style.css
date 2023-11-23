@@ -157,12 +157,16 @@ body {
   }
   .container .body #form .container-input #email, .container .body #form #enviar {
     height: 4.3rem;
+    cursor: pointer;
   }
   .container .body #form .container-input #email {
     width: 38rem;
   }
   .container .body #form #enviar {
     width: 15rem;
+  }
+  .container .body #form #enviar:hover {
+    opacity: 0.8;
   }
   .container .body .illustration-dashboard {
     margin-top: 6rem;
