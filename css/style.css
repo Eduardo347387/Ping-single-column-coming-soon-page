@@ -1,1 +1,196 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale_Blue: hsl(223, 100%, 88%);
+  --Light_Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very_Dark_Blue: hsl(209, 33%, 12%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2.5rem 1rem 4rem 1rem;
+}
+.container .header {
+  text-align: center;
+}
+.container .header .logo {
+  width: 7rem;
+}
+.container .header .title {
+  margin-top: 3.4rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--Gray);
+  letter-spacing: 0.1rem;
+}
+.container .header .title span {
+  color: var(--Very_Dark_Blue);
+  font-weight: 700;
+}
+.container .header .paragraph {
+  word-spacing: 0.1rem;
+  margin-top: 1.6rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--Very_Dark_Blue);
+}
+.container .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.container .body #form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+}
+.container .body #form .container-input {
+  text-align: center;
+}
+.container .body #form .container-input #email, .container .body #form #enviar {
+  width: 28rem;
+  border-radius: 2.5rem;
+}
+.container .body #form .container-input #email {
+  height: 4.2rem;
+  border: 1px solid;
+  border-color: var(--Pale_Blue);
+  padding-left: 3rem;
+  font-size: 1.4rem;
+}
+.container .body #form .container-input #email::-moz-placeholder {
+  color: var(--Gray);
+}
+.container .body #form .container-input #email::placeholder {
+  color: var(--Gray);
+}
+.container .body #form #enviar {
+  background-color: var(--Blue);
+  color: #fff;
+  height: 4.1rem;
+  box-shadow: 0 0.5rem 0.7rem var(--Pale_Blue);
+  border: none;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+.container .body .illustration-dashboard {
+  margin-top: 4rem;
+  width: 32rem;
+}
+.container .footer {
+  margin-top: 16rem;
+}
+.container .footer .container-social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.container .footer .container-social .container-icon {
+  border: 1px solid;
+  border-color: var(--Pale_Blue);
+  border-radius: 50%;
+  padding: 0.9rem;
+}
+.container .footer .container-social .container-icon ion-icon {
+  font-size: 2.2rem;
+  color: var(--Blue);
+  font-weight: 700;
+}
+.container .footer .copyright {
+  margin-top: 3.2rem;
+  font-size: 1.4rem;
+  color: var(--Gray);
+  letter-spacing: 0.01rem;
+}
+
+@media (min-width: 550px) {
+  .container .header .logo {
+    width: 8.5rem;
+  }
+  .container .header .title {
+    font-size: 2.9rem;
+    letter-spacing: 0.1rem;
+  }
+  .container .header .paragraph {
+    font-size: 1.7rem;
+  }
+  .container .body {
+    text-align: center;
+  }
+  .container .body #form {
+    flex-direction: row;
+    row-gap: 0;
+    align-items: flex-start;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+  .container .body #form .container-input {
+    text-align: left;
+  }
+  .container .body #form .container-input #email, .container .body #form #enviar {
+    height: 4.3rem;
+  }
+  .container .body #form .container-input #email {
+    width: 38rem;
+  }
+  .container .body #form #enviar {
+    width: 15rem;
+  }
+  .container .body .illustration-dashboard {
+    margin-top: 6rem;
+    width: 54rem;
+  }
+  .container .footer {
+    margin-top: 13rem;
+  }
+}
+@media (min-width: 769px) {
+  html {
+    font-size: 66%;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 70%;
+  }
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  .container .footer {
+    margin-top: 8rem;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 76.5%;
+  }
+}/*# sourceMappingURL=style.css.map */
